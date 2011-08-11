@@ -1,11 +1,13 @@
 MolassesMusic::Application.routes.draw do
-  get "pages/home"
+  get "users/new"
 
-  get "pages/contact"
+    match '/signup',  :to => 'users#new'
 
-  get "pages/about"
+    match '/contact', :to => 'pages#contact'
+    match '/about',   :to => 'pages#about'
+    match '/news',    :to => 'pages#news'
 
-  get "pages/news"
+    root :to => 'pages#home'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
