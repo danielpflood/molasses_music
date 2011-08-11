@@ -5,18 +5,21 @@ class UsersController < ApplicationController
       @title = @user.name
     end
 
-    def new
-        @user = User.new
+  def new
+      @user = User.new
+      @title = "Sign up"
+  end
+  
+  def create
+      @user = User.new(params[:user])
+      if @user.save
+        sign_in @user
+        flash[:success] = "Welcome to Molasses Music!"
+        redirect_to @user
+      else
         @title = "Sign up"
+        render 'new'
       end
-      def create
-          @user = User.new(params[:user])
-          if @user.save
-            flash[:success] = "Welcome to Molasses Music!"
-            redirect_to @user
-          else
-            @title = "Sign up"
-            render 'new'
-          end
-        end
+    end
 end
+      
