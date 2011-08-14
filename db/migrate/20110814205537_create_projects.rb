@@ -2,7 +2,7 @@ class CreateProjects < ActiveRecord::Migration
   def self.up
     create_table :projects do |t|
       t.string :name
-      t.string :project_type
+      t.string :type
       t.integer :user_id
 
       t.timestamps
