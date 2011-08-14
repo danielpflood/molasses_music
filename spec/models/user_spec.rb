@@ -151,4 +151,27 @@ describe User do
       @user.should be_admin
     end
   end
+  describe "project associations" do
+
+      before(:each) do
+        @user = User.create(@attr)
+        @mp1 = Factory(:project, :user => @user, :created_at => 1.day.ago)
+        @mp2 = Factory(:project, :user => @user, :created_at => 1.hour.ago)
+      end
+
+      it "should have a projects attribute" do
+        @user.should respond_to(:projects)
+      end
+
+      it "should have the right projects in the right order" do
+        @user.projects.should == [@mp2, @mp1]
+      end
+      
+      it "should destroy associated pojects" do
+            @user.destroy
+            [@mp1, @mp2].each do |project|
+              Project.find_by_id(project.id).should be_nil
+            end
+          end
+    end
 end

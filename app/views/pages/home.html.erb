@@ -1,24 +1,19 @@
-<h1>Molasses Music</h1>
-
-<p>
-  	Getting Started<br>
-<br>
-			-Create an account.<br>
-						All it takes is a username, email, and password.<br>
-<br>
-				-Create and upload a new project.<br>
-						Add collaborators to your project.<br>
-						Get feedback.<br>
-						Show off finished projects.<br>
-<br>
-				-Contribute<br>
-						Comment on, add to, and checkout other projects.<br>
-						Earn an "Ingredient Quality" score. This will help to sort <br>
-								out the pros from the noobs and the rude from the nice.<br>
-<br>
-<br>
-<br>
-								READY? GO!<br>
-</p>
-
-<%= link_to "Sign up now!", signup_path, :class => "signup_button round" %>
+<% if signed_in? %>
+  <table class="front" summary="For signed-in users">
+    <tr>
+      <td class="main">
+        <h1 class="micropost">What's up?</h1>
+        <%= render 'shared/project_form' %>
+        <%= render 'shared/feed' %>
+      </td>
+      </td>
+      <td class="sidebar round">
+        <%= render 'shared/user_info' %>
+      </td>
+    </tr>
+  </table>
+<% else %>
+  <h1>Molasses Music</h1>
+	<p>Sign up to start sharing projects!</p>
+  <%= link_to "Sign up now!", signup_path, :class => "signup_button round" %>
+<% end %>
