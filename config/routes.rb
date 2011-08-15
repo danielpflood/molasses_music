@@ -1,4 +1,8 @@
 MolassesMusic::Application.routes.draw do
+  
+  get "scores/new"
+
+    resources :uploads
     resources :users
     resources :sessions, :only => [:new, :create, :destroy]
     resources :projects, :only => [:create, :destroy]

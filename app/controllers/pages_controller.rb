@@ -2,6 +2,7 @@ class PagesController < ApplicationController
 
   def home
       @title = "Home"
+      @upload  = Upload.new
       if signed_in?
         @project = Project.new
         @feed_items = current_user.feed.paginate(:page => params[:page])

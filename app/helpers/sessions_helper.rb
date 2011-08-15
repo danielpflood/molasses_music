@@ -30,6 +30,10 @@ module SessionsHelper
     !current_user.nil?
   end
   
+  def has_avatar?
+    !@user.avatar.url == "/avatars/original/missing.png"
+  end
+  
   def sign_out
     cookies.delete(:remember_token)
     self.current_user = nil
@@ -42,6 +46,8 @@ module SessionsHelper
   def deny_access
     redirect_to signin_path, :notice => "Please sign in to access this page."
   end
+  
+  
   
   
   private
@@ -61,5 +67,7 @@ module SessionsHelper
   def clear_return_to
     session[:return_to] = nil
   end
+  
+  
   
 end
