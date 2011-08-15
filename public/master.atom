@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xml:lang="en-US">
+  <id>tag:github.com,2008:/danielpflood/molasses_music/commits/master</id>
+  <link type="text/html" rel="alternate" href="https://github.com/danielpflood/molasses_music/commits/master"/>
+  <link type="application/atom+xml" rel="self" href="https://github.com/danielpflood/molasses_music/commits/master.atom"/>
+  <title>Recent Commits to molasses_music:master</title>
+  <updated>2011-08-15T13:46:05-07:00</updated>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/1c561134973e9a9532ccedaf40ecacf9a600d84e</id>
+    <link type="text/html" rel="alternate" href="https://github.com/danielpflood/molasses_music/commit/1c561134973e9a9532ccedaf40ecacf9a600d84e"/>
+    <title>fixed unfollow partial</title>
+    <updated>2011-08-15T13:46:05-07:00</updated>
+    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/5fc8a5faf05aeef83d2a7729725b3864?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-140.png"/>
+      <author>
+        <name>Daniel Flood</name>
+        <uri>https://github.com/danielpflood</uri>
+      </author>
+    <content type="html">
+      &lt;pre>+ app/views/users/_unfollow.html.erb
+m public/stylesheets/blueprint/screen.css
+m public/stylesheets/custom.css
+&lt;/pre>
+      &lt;pre style='white-space:pre-wrap;width:81ex'>fixed unfollow partial&lt;/pre>
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/cf1d7e305476091140dce111eb2937327bcc6aa6</id>
+    <link type="text/html" rel="alternate" href="https://github.com/danielpflood/molasses_music/commit/cf1d7e305476091140dce111eb2937327bcc6aa6"/>
+    <title>added following havent finished views</title>
+    <updated>2011-08-15T13:22:09-07:00</updated>
+    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/5fc8a5faf05aeef83d2a7729725b3864?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-140.png"/>
+      <author>
+        <name>Daniel Flood</name>
+        <uri>https://github.com/danielpflood</uri>
+      </author>
+    <content type="html">
+      &lt;pre>+ app/controllers/relationships_controller.rb
+m app/controllers/users_controller.rb
+m app/models/project.rb
+m app/models/user.rb
+m app/views/pages/home.html.erb
++ app/views/relationships/create.js.erb
++ app/views/relationships/destroy.js.erb
++ app/views/shared/_stats.html.erb
++ app/views/users/_follow.html.erb
++ app/views/users/_follow_form.html.erb
++ app/views/users/_unfollow.hmtl.erb
+m app/views/users/show.html.erb
++ app/views/users/show_follow.hmtl.erb
+m config/routes.rb
+&lt;/pre>
+      &lt;pre style='white-space:pre-wrap;width:81ex'>added following havent finished views&lt;/pre>
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/adbd5de42e5a376b1eab7c4b1dcd4c43b089ea4c</id>
+    <link type="text/html" rel="alternate" href="https://github.com/danielpflood/molasses_music/commit/adbd5de42e5a376b1eab7c4b1dcd4c43b089ea4c"/>
+    <title>lots of changes added relationships worked on uploads</title>
+    <updated>2011-08-15T11:49:24-07:00</updated>
+    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/5fc8a5faf05aeef83d2a7729725b3864?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-140.png"/>
+      <author>
+        <name>Daniel Flood</name>
+        <uri>https://github.com/danielpflood</uri>
+      </author>
+    <content type="html">
+      &lt;pre>m Gemfile
+m Gemfile.lock
+m app/controllers/application_controller.rb
+m app/controllers/pages_controller.rb
+m app/controllers/projects_controller.rb
++ app/controllers/uploads_controller.rb
+m app/helpers/application_helper.rb
+m app/helpers/sessions_helper.rb
++ app/helpers/uploads_helper.rb
+m app/helpers/users_helper.rb
++ app/models/relationship.rb
++ app/models/upload.rb
+m app/models/user.rb
+m app/views/layouts/_stylesheets.html.erb
++ app/views/uploads/_form.html.erb
++ app/views/uploads/edit.html.erb
++ app/views/uploads/index.html.erb
++ app/views/uploads/new.html.erb
++ app/views/uploads/show.html.erb
+m app/views/users/edit.html.erb
+m app/views/users/new.html.erb
+m app/views/users/show.html.erb
+m config/routes.rb
++ db/migrate/20110815043143_create_uploads.rb
++ db/migrate/20110815151213_add_avatar_columns_to_user.rb
++ db/migrate/20110815163207_create_collaborators.rb
++ db/migrate/20110815163529_create_relationships.rb
+m db/schema.rb
+m lib/tasks/sample_data.rake
++ public/jQuery-File-Upload/.gitignore
++ public/jQuery-File-Upload/README.md
++ public/jQuery-File-Upload/README.txt
++ public/jQuery-File-Upload/example/application.js
++ public/jQuery-File-Upload/example/files/.htaccess
++ public/jQuery-File-Upload/example/index.html
++ public/jQuery-File-Upload/example/style.css
++ public/jQuery-File-Upload/example/thumbnails/.htaccess
++ public/jQuery-File-Upload/example/upload.php
++ public/jQuery-File-Upload/pbar-ani.gif
++ public/jQuery-File-Upload/tests/index.html
++ public/jQuery-File-Upload/tests/tests.js
++ public/javascripts/jquery.fileupload-ui.js
++ public/javascripts/jquery.fileupload.js
++ public/javascripts/jquery.iframe-transport.js
++ public/stylesheets/jquery.fileupload-ui.css
++ public/stylesheets/scaffold.css
++ spec/controllers/uploads_controller_spec.rb
++ spec/helpers/uploads_helper_spec.rb
++ spec/models/collaborator_spec.rb
++ spec/models/relationship_spec.rb
++ spec/models/upload_spec.rb
++ spec/requests/uploads_spec.rb
++ spec/routing/uploads_routing_spec.rb
++ spec/views/scores/new.html.erb_spec.rb
++ spec/views/uploads/edit.html.erb_spec.rb
++ spec/views/uploads/index.html.erb_spec.rb
++ spec/views/uploads/new.html.erb_spec.rb
++ spec/views/uploads/show.html.erb_spec.rb
+&lt;/pre>
+      &lt;pre style='white-space:pre-wrap;width:81ex'>lots of changes added relationships worked on uploads&lt;/pre>
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/a4ab261522bbb1184adc22c37be0d0200a857879</id>
+    <link type="text/html" rel="alternate" href="https://github.com/danielpflood/molasses_music/commit/a4ab261522bbb1184adc22c37be0d0200a857879"/>
+    <title>changed the header image back</title>
+    <updated>2011-08-14T20:27:48-07:00</updated>
+    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/5fc8a5faf05aeef83d2a7729725b3864?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-140.png"/>
+      <author>
+        <name>Daniel Flood</name>
+        <uri>https://github.com/danielpflood</uri>
+      </author>
+    <content type="html">
+      &lt;pre>m app/views/pages/home.html.erb
+m public/images/logo.png
+m public/stylesheets/custom.css
+&lt;/pre>
+      &lt;pre style='white-space:pre-wrap;width:81ex'>changed the header image back&lt;/pre>
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/dc4004bc0f37187c8ab281e1dac9da1fb394e61d</id>
+    <link type="text/html" rel="alternate" href="https://github.com/danielpflood/molasses_music/commit/dc4004bc0f37187c8ab281e1dac9da1fb394e61d"/>
+    <title>changed the css back and the header image to green</title>
+    <updated>2011-08-14T20:23:38-07:00</updated>
+    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/5fc8a5faf05aeef83d2a7729725b3864?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-140.png"/>
+      <author>
+        <name>Daniel Flood</name>
+        <uri>https://github.com/danielpflood</uri>
+      </author>
+    <content type="html">
+      &lt;pre>m public/stylesheets/custom.css
+&lt;/pre>
+      &lt;pre style='white-space:pre-wrap;width:81ex'>changed the css back and the header image to green&lt;/pre>
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/e9c92f4869c18a36d0df062735bd5fba2991c35a</id>
+    <link type="text/html" rel="alternate" href="https://github.com/danielpflood/molasses_music/commit/e9c92f4869c18a36d0df062735bd5fba2991c35a"/>
+    <title>changed the css</title>
+    <updated>2011-08-14T20:19:06-07:00</updated>
+    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/5fc8a5faf05aeef83d2a7729725b3864?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-140.png"/>
+      <author>
+        <name>Daniel Flood</name>
+        <uri>https://github.com/danielpflood</uri>
+      </author>
+    <content type="html">
+      &lt;pre>m app/views/pages/home.html.erb
+m public/images/logo.png
+m public/stylesheets/custom.css
+&lt;/pre>
+      &lt;pre style='white-space:pre-wrap;width:81ex'>changed the css&lt;/pre>
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/1d41d3ecaedd3da2cfefa579f471c93e56031ada</id>
+    <link type="text/html" rel="alternate" href="https://github.com/danielpflood/molasses_music/commit/1d41d3ecaedd3da2cfefa579f471c93e56031ada"/>
+    <title>changed the signup button position</title>
+    <updated>2011-08-14T18:02:31-07:00</updated>
+    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/5fc8a5faf05aeef83d2a7729725b3864?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-140.png"/>
+      <author>
+        <name>Daniel Flood</name>
+        <uri>https://github.com/danielpflood</uri>
+      </author>
+    <content type="html">
+      &lt;pre>m app/views/pages/home.html.erb
+m public/stylesheets/custom.css
+&lt;/pre>
+      &lt;pre style='white-space:pre-wrap;width:81ex'>changed the signup button position&lt;/pre>
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/823df95ace29adde97b2e1b85329f9df897bcf36</id>
+    <link type="text/html" rel="alternate" href="https://github.com/danielpflood/molasses_music/commit/823df95ace29adde97b2e1b85329f9df897bcf36"/>
+    <title>changed the way projects list</title>
+    <updated>2011-08-14T17:16:52-07:00</updated>
+    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/5fc8a5faf05aeef83d2a7729725b3864?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-140.png"/>
+      <author>
+        <name>Daniel Flood</name>
+        <uri>https://github.com/danielpflood</uri>
+      </author>
+    <content type="html">
+      &lt;pre>m app/views/pages/about.html.erb
+m app/views/pages/contact.html.erb
+m app/views/pages/news.html.erb
+m app/views/projects/_project.html.erb
+m app/views/shared/_feed_item.html.erb
+m app/views/shared/_project_form.html.erb
+m app/views/users/edit.html.erb
+m app/views/users/index.html.erb
+m app/views/users/show.html.erb
+m public/stylesheets/custom.css
+&lt;/pre>
+      &lt;pre style='white-space:pre-wrap;width:81ex'>changed the way projects list&lt;/pre>
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/b5006772e699640db5011982e293a079727ccf48</id>
+    <link type="text/html" rel="alternate" href="https://github.com/danielpflood/molasses_music/commit/b5006772e699640db5011982e293a079727ccf48"/>
+    <title>changed homepage</title>
+    <updated>2011-08-14T16:53:40-07:00</updated>
+    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/5fc8a5faf05aeef83d2a7729725b3864?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-140.png"/>
+      <author>
+        <name>Daniel Flood</name>
+        <uri>https://github.com/danielpflood</uri>
+      </author>
+    <content type="html">
+      &lt;pre>m app/views/pages/home.html.erb
+&lt;/pre>
+      &lt;pre style='white-space:pre-wrap;width:81ex'>changed homepage&lt;/pre>
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/1fa0247403142793b4b0220ef1e3328dbbe95b07</id>
+    <link type="text/html" rel="alternate" href="https://github.com/danielpflood/molasses_music/commit/1fa0247403142793b4b0220ef1e3328dbbe95b07"/>
+    <title>fixed a migration error</title>
+    <updated>2011-08-14T16:38:36-07:00</updated>
+    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/5fc8a5faf05aeef83d2a7729725b3864?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-140.png"/>
+      <author>
+        <name>Daniel Flood</name>
+        <uri>https://github.com/danielpflood</uri>
+      </author>
+    <content type="html">
+      &lt;pre>m db/migrate/20110814205537_create_projects.rb
+&lt;/pre>
+      &lt;pre style='white-space:pre-wrap;width:81ex'>fixed a migration error&lt;/pre>
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/73bdec7d7c6b3e99b3bd837ea585a255e1b0323d</id>
+    <link type="text/html" rel="alternate" href="https://github.com/danielpflood/molasses_music/commit/73bdec7d7c6b3e99b3bd837ea585a255e1b0323d"/>
+    <title>added very basic projects structure</title>
+    <updated>2011-08-14T16:34:37-07:00</updated>
+    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/5fc8a5faf05aeef83d2a7729725b3864?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-140.png"/>
+      <author>
+        <name>Daniel Flood</name>
+        <uri>https://github.com/danielpflood</uri>
+      </author>
+    <content type="html">
+      &lt;pre>m app/views/projects/_project.html.erb
+&lt;/pre>
+      &lt;pre style='white-space:pre-wrap;width:81ex'>added very basic projects structure&lt;/pre>
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/8ea84a777d51ed758b1ce9e7c4c8a8e70736e602</id>
+    <link type="text/html" rel="alternate" href="https://github.com/danielpflood/molasses_music/commit/8ea84a777d51ed758b1ce9e7c4c8a8e70736e602"/>
+    <title>added very basic projects structure</title>
+    <updated>2011-08-14T16:33:40-07:00</updated>
+    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/5fc8a5faf05aeef83d2a7729725b3864?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-140.png"/>
+      <author>
+        <name>Daniel Flood</name>
+        <uri>https://github.com/danielpflood</uri>
+      </author>
+    <content type="html">
+      &lt;pre>m app/controllers/pages_controller.rb
++ app/controllers/projects_controller.rb
+m app/controllers/users_controller.rb
+m app/helpers/sessions_helper.rb
++ app/models/project.rb
+m app/models/user.rb
+m app/views/pages/home.html.erb
++ app/views/projects/_project.html.erb
++ app/views/shared/_feed.html.erb
++ app/views/shared/_feed_item.html.erb
++ app/views/shared/_project_form.html.erb
++ app/views/shared/_user_info.html.erb
+m app/views/users/show.html.erb
+m config/routes.rb
++ db/migrate/20110814205537_create_projects.rb
++ db/migrate/20110814213728_fix_column_name_type.rb
+m db/schema.rb
+m lib/tasks/sample_data.rake
+m public/stylesheets/custom.css
++ spec/controllers/projects_controller_spec.rb
+m spec/factories.rb
++ spec/models/project_spec.rb
+m spec/models/user_spec.rb
+m spec/requests/friendly_forwardings_spec.rb
++ spec/requests/projects_spec.rb
+&lt;/pre>
+      &lt;pre style='white-space:pre-wrap;width:81ex'>added very basic projects structure&lt;/pre>
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/7c546d60286e38d125304f59c49d8a0470eff4dc</id>
+    <link type="text/html" rel="alternate" href="https://github.com/danielpflood/molasses_music/commit/7c546d60286e38d125304f59c49d8a0470eff4dc"/>
+    <title>Done ith user edit/update, index, and destroy actions</title>
+    <updated>2011-08-14T13:46:51-07:00</updated>
+    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/5fc8a5faf05aeef83d2a7729725b3864?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-140.png"/>
+      <author>
+        <name>Daniel Flood</name>
+        <uri>https://github.com/danielpflood</uri>
+      </author>
+    <content type="html">
+      &lt;pre>m Gemfile
+m Gemfile.lock
+m app/controllers/users_controller.rb
+m app/views/layouts/application.html.erb
++ app/views/users/_user.html.erb
+m app/views/users/index.html.erb
++ db/migrate/20110814204014_add_admin_to_users.rb
+m db/schema.rb
++ lib/tasks/sample_data.rake
+m spec/controllers/users_controller_spec.rb
++ spec/controllers/users_controller_spec.rb.bk.Sun_Aug_14_16_26_06_-0400_2011
++ spec/controllers/users_controller_spec.rb.bk.Sun_Aug_14_16_28_28_-0400_2011
++ spec/controllers/users_controller_spec.rb.bk.Sun_Aug_14_16_28_53_-0400_2011
++ spec/controllers/users_controller_spec.rb.bk.Sun_Aug_14_16_31_22_-0400_2011
+m spec/factories.rb
+m spec/models/user_spec.rb
++ spec/models/user_spec.rb.bk.Sun_Aug_14_16_33_45_-0400_2011
+&lt;/pre>
+      &lt;pre style='white-space:pre-wrap;width:81ex'>Done ith user edit/update, index, and destroy actions&lt;/pre>
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/165433e2d302740d87a2530e81f176718697bf65</id>
+    <link type="text/html" rel="alternate" href="https://github.com/danielpflood/molasses_music/commit/165433e2d302740d87a2530e81f176718697bf65"/>
+    <title>listing users added</title>
+    <updated>2011-08-14T12:59:22-07:00</updated>
+    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/5fc8a5faf05aeef83d2a7729725b3864?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-140.png"/>
+      <author>
+        <name>Daniel Flood</name>
+        <uri>https://github.com/danielpflood</uri>
+      </author>
+    <content type="html">
+      &lt;pre>m app/controllers/users_controller.rb
+m app/helpers/sessions_helper.rb
+m app/views/layouts/_header.html.erb
++ app/views/users/index.html.erb
+m public/stylesheets/custom.css
+m spec/controllers/users_controller_spec.rb
+&lt;/pre>
+      &lt;pre style='white-space:pre-wrap;width:81ex'>listing users added&lt;/pre>
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/11c8e2f580aa065a750a4532edc67c9d78cb69c4</id>
+    <link type="text/html" rel="alternate" href="https://github.com/danielpflood/molasses_music/commit/11c8e2f580aa065a750a4532edc67c9d78cb69c4"/>
+    <title>begun adding forwarding controller</title>
+    <updated>2011-08-12T15:37:10-07:00</updated>
+    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/5fc8a5faf05aeef83d2a7729725b3864?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-140.png"/>
+      <author>
+        <name>Daniel Flood</name>
+        <uri>https://github.com/danielpflood</uri>
+      </author>
+    <content type="html">
+      &lt;pre>m app/controllers/sessions_controller.rb
+m app/controllers/users_controller.rb
+m app/helpers/application_helper.rb
+m app/helpers/sessions_helper.rb
+m app/views/layouts/_header.html.erb
+m app/views/shared/_error_messages.html.erb
++ app/views/users/edit.html.erb
+m app/views/users/new.html.erb
+m public/stylesheets/custom.css
+m spec/controllers/pages_controller_spec.rb
+m spec/controllers/users_controller_spec.rb
++ spec/requests/friendly_forwardings_spec.rb
+&lt;/pre>
+      &lt;pre style='white-space:pre-wrap;width:81ex'>begun adding forwarding controller&lt;/pre>
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/68bcc0a919d35e5be610f8237795b2b471b0c696</id>
+    <link type="text/html" rel="alternate" href="https://github.com/danielpflood/molasses_music/commit/68bcc0a919d35e5be610f8237795b2b471b0c696"/>
+    <title>changed about us from default</title>
+    <updated>2011-08-11T15:02:33-07:00</updated>
+    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/5fc8a5faf05aeef83d2a7729725b3864?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-140.png"/>
+      <author>
+        <name>Daniel Flood</name>
+        <uri>https://github.com/danielpflood</uri>
+      </author>
+    <content type="html">
+      &lt;pre>m app/views/pages/about.html.erb
+&lt;/pre>
+      &lt;pre style='white-space:pre-wrap;width:81ex'>changed about us from default&lt;/pre>
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/14e7744f8c8c2b07a124777aa2fc044822934892</id>
+    <link type="text/html" rel="alternate" href="https://github.com/danielpflood/molasses_music/commit/14e7744f8c8c2b07a124777aa2fc044822934892"/>
+    <title>changed css</title>
+    <updated>2011-08-11T15:00:22-07:00</updated>
+    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/5fc8a5faf05aeef83d2a7729725b3864?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-140.png"/>
+      <author>
+        <name>Daniel Flood</name>
+        <uri>https://github.com/danielpflood</uri>
+      </author>
+    <content type="html">
+      &lt;pre>m public/stylesheets/custom.css
+&lt;/pre>
+      &lt;pre style='white-space:pre-wrap;width:81ex'>changed css&lt;/pre>
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/6d4036dbf7cb56089ebfe9066e46ff6735466c76</id>
+    <link type="text/html" rel="alternate" href="https://github.com/danielpflood/molasses_music/commit/6d4036dbf7cb56089ebfe9066e46ff6735466c76"/>
+    <title>Done with sign in</title>
+    <updated>2011-08-11T14:49:07-07:00</updated>
+    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/5fc8a5faf05aeef83d2a7729725b3864?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-140.png"/>
+      <author>
+        <name>Daniel Flood</name>
+        <uri>https://github.com/danielpflood</uri>
+      </author>
+    <content type="html">
+      &lt;pre>m app/controllers/application_controller.rb
++ app/controllers/sessions_controller.rb
+m app/controllers/users_controller.rb
+m app/helpers/application_helper.rb
++ app/helpers/sessions_helper.rb
+m app/models/user.rb
+m app/views/layouts/_header.html.erb
+m app/views/pages/contact.html.erb
++ app/views/sessions/new.html.erb
++ cat
+m config/routes.rb
++ spec/controllers/sessions_controller_spec.rb
+m spec/controllers/users_controller_spec.rb
++ spec/requests/layout_links_spec.rb
+m spec/requests/users_spec.rb
+m spec/spec_helper.rb
+&lt;/pre>
+      &lt;pre style='white-space:pre-wrap;width:81ex'>Done with sign in&lt;/pre>
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/f88a6939465d9bd6b3657e2ffcc3ce517443dc3b</id>
+    <link type="text/html" rel="alternate" href="https://github.com/danielpflood/molasses_music/commit/f88a6939465d9bd6b3657e2ffcc3ce517443dc3b"/>
+    <title>User signup complete</title>
+    <updated>2011-08-11T10:45:34-07:00</updated>
+    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/5fc8a5faf05aeef83d2a7729725b3864?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-140.png"/>
+      <author>
+        <name>Daniel Flood</name>
+        <uri>https://github.com/danielpflood</uri>
+      </author>
+    <content type="html">
+      &lt;pre>m app/controllers/users_controller.rb
+m app/views/layouts/application.html.erb
++ app/views/shared/_error_messages.html.erb
+m app/views/users/new.html.erb
+m public/stylesheets/custom.css
+m spec/controllers/users_controller_spec.rb
++ spec/requests/users_spec.rb
+&lt;/pre>
+      &lt;pre style='white-space:pre-wrap;width:81ex'>User signup complete&lt;/pre>
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/0252161e1d16eebccd7143cff6b02a45b1d4d3f9</id>
+    <link type="text/html" rel="alternate" href="https://github.com/danielpflood/molasses_music/commit/0252161e1d16eebccd7143cff6b02a45b1d4d3f9"/>
+    <title>changed rakefile</title>
+    <updated>2011-08-11T10:20:38-07:00</updated>
+    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/5fc8a5faf05aeef83d2a7729725b3864?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-140.png"/>
+      <author>
+        <name>Daniel Flood</name>
+        <uri>https://github.com/danielpflood</uri>
+      </author>
+    <content type="html">
+      &lt;pre>m Rakefile
+&lt;/pre>
+      &lt;pre style='white-space:pre-wrap;width:81ex'>changed rakefile&lt;/pre>
+    </content>
+  </entry>
+</feed>
+
