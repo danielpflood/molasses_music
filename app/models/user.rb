@@ -47,7 +47,7 @@ class User < ActiveRecord::Base
        end
        def feed
            # This is preliminary. See Chapter 12 for the full implementation.
-           Project.where("user_id = ?", id)
+           Project.from_users_followed_by(self)
          end
 
        def self.authenticate_with_salt(id, cookie_salt)

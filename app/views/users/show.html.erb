@@ -10,6 +10,7 @@
         <% end %>
         <font class="greenheader"><%= @user.name %>'s Profile</font>
       </h1>
+      <%= render 'follow_form' if signed_in? %>
     <% unless @user.projects.empty? %>
 	        <table class="projects" summary="User projects">
 		<tr><td><h3>Projects:</h3></td></tr>
@@ -22,6 +23,7 @@
 	      <strong>Name</strong> <%= @user.name %><br />
 	      <strong>URL</strong> <%= link_to user_path(@user), @user %><br />
 	      <strong>Projects</strong> <%= @user.projects.count %>
+	      <%= render 'shared/stats' %>
 	    </td>
 	  </tr>
 	</table>

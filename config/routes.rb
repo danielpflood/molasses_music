@@ -1,11 +1,14 @@
 MolassesMusic::Application.routes.draw do
-  
-  get "scores/new"
 
     resources :uploads
-    resources :users
+    resources :users do
+        member do
+          get :following, :followers
+        end
+      end
     resources :sessions, :only => [:new, :create, :destroy]
     resources :projects, :only => [:create, :destroy]
+    resources :relationships, :only => [:create, :destroy]
 
     match '/signup',  :to => 'users#new'
     match '/signin',  :to => 'sessions#new'
