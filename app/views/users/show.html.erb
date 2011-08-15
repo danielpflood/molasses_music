@@ -3,10 +3,11 @@
     <td class="main">
       <h1>
         <%= gravatar_for @user %>
-        <%= @user.name %>
+        <font class="greenheader"><%= @user.name %>'s Profile</font>
       </h1>
     <% unless @user.projects.empty? %>
 	        <table class="projects" summary="User projects">
+		<tr><td><h3>Projects:</h3></td></tr>
 	          <%= render @projects %>
 	        </table>
 	        <%= will_paginate @projects %>

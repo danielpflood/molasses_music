@@ -1,7 +1,7 @@
 <tr>
   <td class="project">
-    <span class="name"><%= project.name %></span>
-<span class="project_type"><%= project.project_type %></span>
+    <span class="name"><strong>Name: </strong><%= project.name %></span><br>
+<span class="project_type"><strong>Type: </strong><%= project.project_type %></span><br>
     <span class="timestamp">
       Posted <%= time_ago_in_words(project.created_at) %> ago.
     </span>

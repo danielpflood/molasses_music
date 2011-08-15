@@ -1,6 +1,9 @@
 .container {
   width: 710px;
 }
+.greenheader{
+	color:green;
+}
 
 body {
   background: #eee;
@@ -223,6 +226,9 @@ table.projects tr td.project span.timestamp {
   font-size: 85%;
   color: #666;
 }
+table.projects tr td.project span.user a{
+  color: green;
+}
 
 div.user_info img {
   padding-right: 0.1em;
@@ -245,6 +251,6 @@ form.new_project {
 }
 
 form.new_project textarea {
-  height: 4em;
+  height: 1em;
   margin-bottom: 0;
 }
