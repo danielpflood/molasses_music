@@ -1,6 +1,9 @@
 .container {
   width: 710px;
 }
+.greenheader{
+	color:green;
+}
 
 body {
   background: #eee;
@@ -12,23 +15,19 @@ header {
 
 header img {
   padding: 1em;
-  background: #640000;
+  background: #006400;
 }
 
 section {
   margin-top: 1em;
   font-size: 120%;
   padding: 20px;
-  background: #646464;
+  background: #ddd;
  
 }
 
 section h1 {
   font-size: 200%;
-}
-
-section h3 {
-  color: #fff;
 }
 
 /* Links */
@@ -54,7 +53,7 @@ nav {
 }
 
 nav {
-  background-color: #640000;
+  background-color: #ddd;
   padding: 0 0.7em;
   white-space: nowrap;
 }
@@ -73,11 +72,10 @@ nav ul li {
 nav ul li a {
   padding: 0 5px;
   font-weight: bold;
-  color:#fff;
 }
 
 nav ul li a:visited {
-  color: #fff;
+  color: #000;
 }
 
 nav ul li a:hover {
@@ -120,7 +118,6 @@ footer {
 
 footer nav {
   float: none;
-background: #640000;
 }
 
 /* User show page */
@@ -230,7 +227,7 @@ table.projects tr td.project span.timestamp {
   color: #666;
 }
 table.projects tr td.project span.user a{
-  color: #006400;
+  color: green;
 }
 
 div.user_info img {
