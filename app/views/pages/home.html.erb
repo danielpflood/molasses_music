@@ -14,6 +14,28 @@
   </table>
 <% else %>
   <h1>Molasses Music</h1>
-	<p>Sign up to start sharing projects!</p>
-  <%= link_to "Sign up now!", signup_path, :class => "signup_button round" %>
+<table>
+	<tr>
+		<td>
+	<p>Getting Started<br>
+<br>
+	<br>	-Create an account.
+		<br>	All it takes is a username, email, and password.
+<br>
+	<br>	-Create and upload a new project.
+	<br>		Add collaborators to your project.
+		<br>	Get feedback.
+		<br>	Show off finished projects.
+<br>
+	<br>	-Contribute
+	<br>		Comment on, add to, and checkout other projects.
+		<br>	Earn an "Ingredient Quality" score. This will help to sort 
+		<br>		out the pros from the noobs and the rude from the nice.</p>
+  </td>
+<td>
+	<%= link_to "Sign up now!", signup_path, :class => "signup_button round" %>
+	
+	</td>
+</tr>
+</table>
 <% end %>

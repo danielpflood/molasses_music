@@ -83,7 +83,6 @@ nav ul li a:hover {
 }
 
 /* Sign up button */
-
 a.signup_button {
   margin-left: auto;
   margin-right: auto;
@@ -95,6 +94,7 @@ a.signup_button {
   font-size: 150%;
   font-weight: bold;
   padding: 20px;
+float:right;
 }
 
 /* Round corners */
