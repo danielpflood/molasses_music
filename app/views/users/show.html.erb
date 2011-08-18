@@ -5,6 +5,9 @@
         <%= gravatar_for @user %>
         <font class="greenheader"><%= @user.name %>'s Profile</font>
       </h1>
+      <%= image_tag @user.avatar.url %>
+      <%= image_tag @user.avatar.url(:medium) %>
+      <%= image_tag @user.avatar.url(:thumb) %>
       <%= render 'follow_form' if signed_in? %>
     <% unless @user.projects.empty? %>
 	        <table class="projects" summary="User projects">
@@ -13,9 +16,7 @@
 	        </table>
 	        <%= will_paginate @projects %>
 	      <% end %>
-	      <%= image_tag @user.avatar.url %>
-        <%= image_tag @user.avatar.url(:medium) %>
-        <%= image_tag @user.avatar.url(:thumb) %>
+	      
 	    </td>
 	    <td class="sidebar round">
 	      <strong>Name</strong> <%= @user.name %><br />
