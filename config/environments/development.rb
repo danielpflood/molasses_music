@@ -1,4 +1,5 @@
 MolassesMusic::Application.configure do
+  Paperclip.options[:command_path] = "/usr/local/bin/"
   # Settings specified here will take precedence over those in config/application.rb
 
   # In the development environment your application's code is reloaded on
@@ -23,6 +24,6 @@ MolassesMusic::Application.configure do
   # Only use best-standards-support built into browsers
   config.action_dispatch.best_standards_support = :builtin
   
-  Paperclip.options[:command_path] = "/usr/local/bin/"
+  
 end
 

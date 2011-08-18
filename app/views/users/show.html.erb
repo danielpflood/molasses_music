@@ -5,9 +5,12 @@
         <%= gravatar_for @user %>
         <font class="greenheader"><%= @user.name %>'s Profile</font>
       </h1>
-      <%= image_tag @user.avatar.url %>
-      <%= image_tag @user.avatar.url(:medium) %>
-      <%= image_tag @user.avatar.url(:thumb) %>
+      <%= image_tag @user.avatar.url %>  <br/>
+      The avatar is: <%= @user.avatar %> <br/>
+      The URL is: <%= @user.avatar.url %> <br/>
+      The file name is: <%= @user.avatar_file_name %> <br/>
+      The content of the file is: <%= @user.avatar_content_type %> <br/>
+      The size of the file is: <%= @user.avatar_file_size %> <br/>
       <%= render 'follow_form' if signed_in? %>
     <% unless @user.projects.empty? %>
 	        <table class="projects" summary="User projects">
