@@ -4,5 +4,6 @@ class FixColumnNameType < ActiveRecord::Migration
   end
 
   def self.down
+    rename_column :projects, :projects_type, :type
   end
 end

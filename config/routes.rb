@@ -1,6 +1,4 @@
 MolassesMusic::Application.routes.draw do
-
-    resources :uploads
     resources :users do
         member do
           get :following, :followers
