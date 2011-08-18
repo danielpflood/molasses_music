@@ -2,12 +2,7 @@
   <tr>
     <td class="main">
       <h1>
-      <% if has_avatar? %>
-        <%= image_tag @user.avatar.url %>
-        <%= @user.avatar.url %>
-        <% else %>
         <%= gravatar_for @user %>
-        <% end %>
         <font class="greenheader"><%= @user.name %>'s Profile</font>
       </h1>
       <%= render 'follow_form' if signed_in? %>

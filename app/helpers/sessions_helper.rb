@@ -30,10 +30,6 @@ module SessionsHelper
     !current_user.nil?
   end
   
-  def has_avatar?
-    !@user.avatar.url == "/avatars/original/missing.png"
-  end
-  
   def sign_out
     cookies.delete(:remember_token)
     self.current_user = nil
