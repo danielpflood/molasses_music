@@ -7,6 +7,7 @@ gem "pg", "~> 0.11.0"
 gem "execjs", "~> 1.2.4"
 gem "therubyracer", "~> 0.9.3"
 gem "paperclip", "~> 2.3"
+gem "gravatar", "~> 1.0"
 
 group :development do
   gem 'rspec-rails', '2.6.1'

@@ -20,7 +20,8 @@ class User < ActiveRecord::Base
                                        :class_name => "Relationship",
                                        :dependent => :destroy
     has_many :followers, :through => :reverse_relationships, :source => :follower
-    
+    has_attached_file :avatar, :styles => { :medium => "300x300>", :thumb => "100x100>" }
+  
 
   email_regex = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
 
