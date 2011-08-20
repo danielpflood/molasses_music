@@ -10,9 +10,25 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110818160812) do
+ActiveRecord::Schema.define(:version => 20110820204904) do
 
   create_table "collaborators", :force => true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "forums", :force => true do |t|
+    t.string   "title"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "posts", :force => true do |t|
+    t.string   "title"
+    t.string   "content"
+    t.integer  "user_id"
+    t.integer  "forum_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
