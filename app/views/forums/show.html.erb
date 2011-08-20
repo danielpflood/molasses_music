@@ -8,6 +8,7 @@
 <table class="posts" summary="Forum Posts">
 <tr><td><h3>Posts:</h3></td></tr>
   <%= render @posts %>
+  <tr><td><%= link_to 'Create Post', new_post_path %></td></tr>
 </table>
 <%= will_paginate @posts %>
 
